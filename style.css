@@ -1,0 +1,101 @@
+/* color palette from https://www.color-hex.com/color-palettes */
+:root {
+  --darkest-color: #000000;
+  --lightest-color: #0cd0cd;
+  --highlight-color: #ffffff;
+  --bright-color-1: #cf1596;
+  --bright-color-2: #76b6c4;
+  --bright-color-3: #7fcdff;
+  --bright-color-4: #6093d2;
+}
+
+body {
+  background: var(--darkest-color);
+  color: var(--lightest-color);
+  font-family: "Heebo", sans-serif;
+}
+
+.container {
+  width: 45%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.circle-shape {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  display: inline;
+  margin-right: auto;
+  margin: 0px;
+  height: 100%;
+  width: auto;
+}
+
+a {
+  color: var(--darkest-color);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.ig-link {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.link-list-item {
+  border: 1px solid var(--darkest-color);
+  box-sizing: border-box;
+  margin: 10px auto;
+  color: var(--darkest-color);
+  padding: 15px;
+  text-align: center;
+  transition: all 0.8s;
+  border-radius: 30px;
+}
+
+.link-list-item-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.highlighted,
+.link-list-item:hover,
+a:hover {
+  color: var(--highlight-color);
+  border-color: var(--highlight-color);
+  text-shadow: 0 0 2em var(--highlight-color);
+}
+
+.icon-list-img {
+  height: 50px;
+  width: 50px;
+  margin: 8px;
+}
+
+.dark {
+  background: var(--bright-color-1);
+}
+
+.medium {
+  background: var(--bright-color-2);
+}
+
+.light {
+  background: var(--bright-color-3);
+}
+
+.bright {
+  background: var(--bright-color-4);
+}
